@@ -4,6 +4,7 @@ const title = document.querySelector(".title");
 let timeInterval;
 let timeStop = true;
 const saveValue = localStorage.getItem("countDown") || false;
+
 if (saveValue) {
     startClock(saveValue);
     let inputValue = new Date(saveValue);
@@ -48,7 +49,7 @@ function timeLeft(d) {
     let seconds = Math.floor((total / 1000) % 60);
     let minutes = Math.floor(((total / 1000) / 60) % 60);
     let hours = Math.floor(((total) / (1000 * 60 * 60)) % 24);
-    let days = Math.floor(total / (1000 * 60 * 60 * 24))
+    let days = Math.floor(total / (1000 * 60 * 60 * 24));
 
     return {
         "total": total,
