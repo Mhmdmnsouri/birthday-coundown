@@ -1,5 +1,6 @@
 const endDate = document.querySelector("input[name='endDate']");
 const clock = document.querySelector(".clock");
+const title = document.querySelector(".title");
 let timeInterval;
 let timeStop = true;
 const saveValue = localStorage.getItem("countDown") || false;
@@ -56,5 +57,8 @@ function timeLeft(d) {
         "minutes": minutes,
         "seconds": seconds
     };
-
 }
+
+endDate.addEventListener("change", function () {
+    title.innerHTML = "Time left until your birthday :)";
+});

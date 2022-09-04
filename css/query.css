@@ -1,0 +1,14 @@
+@media (min-width: 576px) {
+    .title {
+        font-size: 38px!important;
+    }
+
+    input[type=date] {
+        width: 15em!important;
+    }
+
+    .clock{
+        width: 20em!important;
+        font-size: 22px!important;
+    }
+}
