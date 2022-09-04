@@ -7,46 +7,52 @@
   src: url(../fonts/Signika-VariableFont_wght.ttf);
 }
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #111;
-  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #090909;
+  color: #ffffff;
 }
 body .container {
-  display: flex;
-  flex-direction: column;
   height: 30em;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   text-align: center;
 }
 body .title {
   margin: 0;
-  font-size: 34px;
+  font-size: 7vw;
   font-family: "Signika-VariableFont_wght";
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 body input[type=date] {
-  outline: none;
-  cursor: pointer;
-  border-color: ffffff;
-  width: 20em;
+  width: 45vw;
+  padding: 8px 16px;
   text-align: center;
+  outline: none;
   border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
 }
 body .clock {
-  width: 20em;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Poppins-Medium";
-  font-size: 24px;
+  font-size: 18px;
 }
 body .clock > span {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 0 1px;
 }/*# sourceMappingURL=main.css.map */
