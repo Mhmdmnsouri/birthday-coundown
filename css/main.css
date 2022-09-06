@@ -6,6 +6,10 @@
   font-family: "Signika-VariableFont_wght";
   src: url(../fonts/Signika-VariableFont_wght.ttf);
 }
+.hidden {
+  display: none;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -27,12 +31,12 @@ body .container {
 }
 body .title {
   margin: 0;
-  font-size: 7vw;
+  font-size: 5vw;
   font-family: "Signika-VariableFont_wght";
   letter-spacing: 2px;
 }
 body input[type=date] {
-  width: 45vw;
+  width: 40vw;
   padding: 8px 16px;
   text-align: center;
   outline: none;
