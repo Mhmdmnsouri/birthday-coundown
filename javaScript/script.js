@@ -12,6 +12,8 @@ if (saveValue) {
 }
 
 endDate.addEventListener("change", function (e) {
+    title.innerHTML = "Time left until your birthday :)";
+    endDate.classList.toggle("hidden");
     e.preventDefault();
     clearInterval(timeInterval);
     const temp = new Date(endDate.value);
@@ -60,6 +62,6 @@ function timeLeft(d) {
     };
 }
 
-endDate.addEventListener("change", function () {
-    title.innerHTML = "Time left until your birthday :)";
-});
+// endDate.addEventListener("change", function () {
+
+// });
