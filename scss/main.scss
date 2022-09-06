@@ -36,7 +36,7 @@ body {
 
     .title {
         margin: 0;
-        font-size: 5vw;
+        font-size: 6vw;
         font-family: 'Signika-VariableFont_wght';
         letter-spacing: 2px;
     }
@@ -54,14 +54,13 @@ body {
     .clock {
         width: 100%;
         @include flex;
-        justify-content: space-between;
+        justify-content: space-around;
         font-family: 'Poppins-Medium';
         font-size: 18px;
 
         >span {
             @include flex;
             flex-direction: column;
-            margin: 0 1px;
         }
     }
 }
